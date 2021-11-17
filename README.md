@@ -95,8 +95,8 @@ use component :
 <template>
   <div>
     <label>password :</label>
-    <c-input v-model="password" :password-show="passShow"/>
-    <c-input v-model="verifyPassword" :password-show="passShow"/>
+    <c-input v-model="password" :password-show.sync="passShow"/>
+    <c-input v-model="verifyPassword" :password-show.sync="passShow"/>
     <button
     @click="passShow = !passShow"
     >
